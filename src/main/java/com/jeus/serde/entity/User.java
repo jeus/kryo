@@ -12,10 +12,11 @@ import java.util.List;
  * @author jeus
  */
 public class User {
+
     private String name;
     private String famil;
     private int age;
-    private long  registerDate;
+    private long registerDate;
     private List<String> phoneNumber;
     private List<Integer> rateNumber;
 
@@ -28,11 +29,10 @@ public class User {
         this.rateNumber = rateNumber;
     }
 
-    public User()
-    {
-        
+    public User() {
+
     }
-    
+
     public String getName() {
         return name;
     }
@@ -80,12 +80,14 @@ public class User {
     public void setRateNumber(List<Integer> rateNumber) {
         this.rateNumber = rateNumber;
     }
-    
-    private void addRateNumber(Integer rateNum)
-    {
+
+    private void addRateNumber(Integer rateNum) {
         rateNumber.add(rateNum);
     }
-            
-    
-    
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", famil=" + famil + ", age=" + age + ", registerDate=" + registerDate + ", phoneNumber=" + phoneNumber + ", rateNumber=" + rateNumber + '}';
+    }
+
 }
