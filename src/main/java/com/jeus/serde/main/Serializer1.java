@@ -47,10 +47,6 @@ public class Serializer1 {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Serializer1.class.getName()).log(Level.SEVERE, null, ex);
         }
-//    // ...
-//    Input input = new Input(new FileInputStream("file.bin"));
-//    SomeClass someObject = kryo.readObject(input, SomeClass.class);
-//    input.close();
-
+        
     }
 }
