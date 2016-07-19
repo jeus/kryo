@@ -79,7 +79,7 @@ public class BenchTest {
                 rates.add(2);
                 rates.add(3);
                 User user = new User("jeus", "Geek", 29, dt.getTime(), phone, rates);
-
+                
                 kryo.writeObject(output, user);
                 output.close();
             } catch (FileNotFoundException ex) {
